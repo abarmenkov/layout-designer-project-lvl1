@@ -1,1 +1,366 @@
 /** CSS STYLE **/
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/*a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+*/
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Neucha';
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: 1.2em;
+}
+
+:root {
+    --main-color: #fe8a02;
+    --main-dark: #42413c;
+    --dark: #2a2626;
+    --dark-opacity: #908d8b;
+    --brown: #b09a81;
+    --blue: #1085c5;
+    --white: #fff;
+    --white-opacity: #d7ccc0;
+    --light-color: #f5f4f0;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif, 'Neucha', cursive;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: var(--dark);
+}
+
+.head3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+}
+
+.head2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+}
+
+.head1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+}
+
+.orange {
+    color: var(--main-color);
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 0 1 auto;
+
+}
+section {
+    margin: 0px auto;
+    max-width: 1110px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.header {
+    background: url(../img/background.png) no-repeat;
+    background-attachment: center;
+    height: 914px;
+    position: relative;
+    background-size: 0 0;
+    width: 100vw;
+}
+
+.header::before {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: inherit;
+    background-size: cover;
+    opacity: 10%;
+
+}
+.bgd {
+    background: url(../img/background.png) no-repeat;
+    background-attachment: center;
+    height: 960px;
+    position: relative;
+    background-size: 0 0;
+    width: 100vw;
+}
+.bgd::before {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: inherit;
+    background-size: cover;
+    opacity: 10%;  
+}
+.bgdBrown {
+    background: var(--brown) url(../img/background.png) no-repeat;
+    background-attachment: center;
+    height: 960px;
+    position: relative;
+    background-size: 0 0;
+    width: 100vw;
+}
+.bgdBrown::before {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: inherit;
+    background-size: cover;
+    opacity: 10%;  
+}
+.header__img {
+    background: url(../img/main.png) no-repeat;
+    position: absolute;
+    width: 1082.81px;
+    height: 525px;
+    left: 461px;
+    
+}
+
+.header__rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.header__description {
+    width: 50%;
+}
+
+.header__btn {
+    width: 148px;
+    height: 49px;
+    margin-top: 40px;
+    background: var(--main-color);
+    color: var(--white);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.6;
+
+    /* identical to box height, or 26px */
+    text-transform: uppercase;
+}
+
+
+
+.footer {
+    background-color: var(--white);
+    height: 581px;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__subscribe {
+    background-color: var(--main-dark);
+    height: 190px;
+    width: 1110px;
+    font-size: 18px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 76px;
+    margin-top: 100px;
+}
+
+.footer__email {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__email_title {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer__email_subtitle {
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer__email_subtitle a {
+    color: var(--white);
+}
+
+.footer__email_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__email_input {
+    background: var(--white);
+    border: 1px solid #E3E3E3;
+    height: 50px;
+    width: 485px;
+    padding-left: 15px;
+}
+
+.footer__email_input ::placeholder {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    opacity: 20%;
+
+
+}
+
+
+
+.footer__email_btn {
+    width: 62px;
+    height: 50px;
+    background: rgba(254, 138, 2, 1);
+    position: relative;
+}
+
+.footer__email_btn a {
+    color: var(--white);
+}
+
+.footer__copy {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 16px;
+
+}
+
+.footer__site {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: var(--blue);
+}
