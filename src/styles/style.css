@@ -144,6 +144,7 @@ body {
     flex: 0 1 auto;
 
 }
+
 section {
     margin: 0px auto;
     max-width: 1110px;
@@ -171,6 +172,7 @@ section {
     opacity: 10%;
 
 }
+
 .bgd {
     background: url(../img/background.png) no-repeat;
     background-attachment: center;
@@ -179,6 +181,7 @@ section {
     background-size: 0 0;
     width: 100vw;
 }
+
 .bgd::before {
     content: "";
     display: block;
@@ -187,8 +190,9 @@ section {
     position: absolute;
     background: inherit;
     background-size: cover;
-    opacity: 10%;  
+    opacity: 10%;
 }
+
 .bgdBrown {
     background: var(--brown) url(../img/background.png) no-repeat;
     background-attachment: center;
@@ -197,6 +201,7 @@ section {
     background-size: 0 0;
     width: 100vw;
 }
+
 .bgdBrown::before {
     content: "";
     display: block;
@@ -205,32 +210,50 @@ section {
     position: absolute;
     background: inherit;
     background-size: cover;
-    opacity: 10%;  
+    opacity: 10%;
 }
+
 .relative {
     position: relative;
 }
+
 .header__img {
     background: url(../img/main.png) no-repeat;
     position: absolute;
     width: 1082.81px;
     height: 525px;
-    left: 461px; 
+    left: 291px;
     top: 55px;
-    right: -270px; 
+    right: -270px;
 }
-.header__row {
-    
+
+.header__row {}
+
+.header__title {
+    line-height: 86px;
 }
+
+.header__subtitle {
+    line-height: 100%;
+}
+
 .header__text {
     display: flex;
     padding-top: 195px;
-    column-gap: 30px; 
-      
+    column-gap: 30px;
+    justify-content: space-between;
 }
 
 .header__description {
     width: 50%;
+}
+
+.p__16 {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-Style: normal;
+    font-size: 16px;
+    line-height: 25, 6px;
 }
 
 .header__btn {
@@ -249,12 +272,43 @@ section {
     text-transform: uppercase;
     transition-duration: 0.4s;
 }
+
 .header__btn:hover {
     background: var(--brown);
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
 }
 
+.videosection {
+    text-align: center;
+    background-color: var(--white);
+    height: 814px;
+}
 
+.videosection__title {
+    line-height: 72px;
+}
+
+.videosection__subtitle {
+    line-height: 72px;
+
+}
+
+.videosection__text {
+    padding-bottom: 30px;
+    padding-top: 27px;
+}
+
+.video {
+    position: absolute;
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+    left: 91px;
+    top: 329px;
+
+}
+
+.navigation {
+    background-color: lawngreen;
+}
 
 .footer {
     background-color: var(--white);
@@ -332,6 +386,7 @@ section {
     letter-spacing: 0em;
     opacity: 20%;
 }
+
 .footer__email_btn {
     width: 62px;
     height: 50px;
